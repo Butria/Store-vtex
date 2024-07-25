@@ -1,8 +1,10 @@
 {
     "responsive-layout.mobile#home__section": {
-        "title": "Home section desktop",
+        "title": "Home section mobile",
         "children": [
-            "flex-layout.row#mobile_home-section"
+            "flex-layout.row#mobile__home-section",
+            "flex-layout.row#global__second--slider"
+
         ]
 
     }

@@ -2,17 +2,33 @@
     "flex-layout.row#tablet__home-section": {
         "title": "tablet row with text",
         "children": [
-            "rich-text#tablet__section--1"
+            "list-context.image-list#desktop__main-banner"
         ]
     },
 
-    "rich-text#tablet__section--1":{
-        "title": "Text favorites at tablet",
+    "list-context.image-list#tablet__main-banner": {
         "props": {
-            "text": "Favoritos en Tablet",
-            "font": "t-heading-2",
-            "textAlignment": "CENTER",
-            "textPosition": "CENTER"
+            "images": [
+                {
+                    "image": "/arquivos/hero_desktop.png",
+                    "description": "Main banner image",
+                    "link": {"url": "#"}
+                }
+            ]
+        },
+
+        "children": [
+            "slider-layout#tablet__main-banner-slider"
+        ]
+    },
+
+    "slider-layout#tablet__main-banner-slider": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 5,
+                "tablet": 3,
+                "phone": 1
+            }
         }
     }
 }
