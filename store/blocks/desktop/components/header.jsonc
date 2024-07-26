@@ -15,9 +15,10 @@
       "fullWidth": true
     },
     "children": [
+      "drawer",
       "flex-layout.col#logo-desktop",
       "flex-layout.col#spacer",
-      "search-bar",
+      "search-bar#desktop",
       "locale-switcher",
       "login",
       "minicart.v2"
@@ -28,5 +29,11 @@
       "verticalAlign": "middle"
     },
     "children": ["logo"]
+  },
+  "search-bar#desktop": {
+    "props": {
+        "verticalAlign" : "middle",
+        "horizontalAlign" : "LEFT"
+    }
   }
 }
