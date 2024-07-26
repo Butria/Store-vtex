@@ -1,12 +1,12 @@
 {
-    "flex-layout.row#desktop_home-section": {
-        "title": "desktop row with text",
+    "flex-layout.row#tablet__home-section": {
+        "title": "tablet row with text",
         "children": [
             "list-context.image-list#desktop__main-banner"
         ]
     },
 
-    "list-context.image-list#desktop__main-banner": {
+    "list-context.image-list#tablet__main-banner": {
         "props": {
             "images": [
                 {
@@ -18,11 +18,11 @@
         },
 
         "children": [
-            "slider-layout#desktop__main-banner-slider"
+            "slider-layout#tablet__main-banner-slider"
         ]
     },
 
-    "slider-layout#desktop__main-banner-slider": {
+    "slider-layout#tablet__main-banner-slider": {
         "props": {
             "itemsPerPage": {
                 "desktop": 5,
