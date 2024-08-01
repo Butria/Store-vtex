@@ -1,11 +1,13 @@
 {
     "flex-layout.row#text__one--home": {
-        "title": "Text ro one home",
+        "title": "Text row one home",
         "children": [
             "flex-layout.col#text__one--home",
             "flex-layout.col#text__two--home"
         ],
-        "props": {}
+        "props": {
+            "blockClass": "c"
+        }
 
     },
     "flex-layout.col#text__one--home": {

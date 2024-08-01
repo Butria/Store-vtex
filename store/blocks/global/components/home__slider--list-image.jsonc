@@ -1,9 +1,11 @@
 {
     "slider-layout#text-test": {
+      "title": "Slider home image full",
       "props": {
+        "fullWidth": false,
         "itemsPerPage": {
-          "desktop": 1,
-          "tablet": 1,
+          "desktop": 5,
+          "tablet": 2,
           "phone": 1
         },
         "infinite": true,
