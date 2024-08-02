@@ -1,39 +1,184 @@
 {
-    "slider-layout#text-test": {
-      "title": "Slider home image full",
-      "props": {
-        "fullWidth": false,
-        "itemsPerPage": {
-          "desktop": 5,
-          "tablet": 2,
-          "phone": 1
-        },
-        "infinite": true,
-        "showNavigationArrows": "desktopOnly",
-        "blockClass": "carousel"
+  "flex-layout.row#slider2--home-modified": {
+    "title": "Product Carousel Row",
+    "children": [
+      "slider-layout#products-images--desktop-modified"
+    ],
+    "props": {
+      "blockClass": [
+        "product_slider--desktop"
+      ]
+    }
+  },
+  "slider-layout#products-images--desktop-modified": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
       },
-      "children": ["rich-text#1", "rich-text#2", "rich-text#3"]
-    },
-  
-    "flex-layout.col": {
-      "children": [
-  
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "always", 
+      "blockClass": [
+        "productSlider"
       ]
     },
-  
-    "rich-text#1": {
-      "props": {
-        "text": "Test1"
-      }
+    "children": [
+      "flex-layout.col#productCard--desktop",
+      "flex-layout.col#productCard--desktop",
+      "flex-layout.col#productCard--desktop",
+      "flex-layout.col#productCard--desktop",
+      "flex-layout.col#productCard--desktop"
+    ]
+  },
+  "flex-layout.col#productCard--desktop": {
+    "title": "Product Card Desktop",
+    "children": [
+      "flex-layout.row#badge--like",
+      "flex-layout.row#desktop--image",
+      "flex-layout.row#product-description",
+      "flex-layout.row#original-price",
+      "flex-layout.row#discounted-price",
+      "flex-layout.row#freeShippingImage",
+      "image#buyButton"
+    ],
+    "props": {
+      "blockClass": [
+        "product-card--desktop"
+      ]
+    }
+  },
+  "flex-layout.row#badge--like": {
+    "title": "Badge and Like",
+    "children": [
+      "image#badge_like"
+    ],
+    "props": {
+      "blockClass": [
+        "badge--like"
+      ]
+    }
+  },
+  "image#badge_like": {
+    "title": "Image Like Badge",
+    "props": {
+      "src": "arquivos/Like.png",
+      "blockClass": [
+        "image-badge-like"
+      ]
+    }
+  },
+  "flex-layout.row#desktop--image": {
+    "title": "Product Image Desktop",
+    "children": [
+      "image#desktop--product"
+    ]
+  },
+  "image#desktop--product": {
+    "title": "Product Image",
+    "props": {
+      "src": "arquivos/desktop-computer-image-product-summary-slider.png",
+      "blockClass": [
+        "product_image"
+      ]
+    }
+  },
+  "flex-layout.row#product-description": {
+    "title": "Product Description",
+    "props": {
+      "blockClass": [
+        "product-description"
+      ]
     },
-    "rich-text#2": {
-      "props": {
-        "text": "Test2"
-      }
+    "children": [
+      "rich-text#product-description-text"
+    ]
+  },
+  "rich-text#product-description-text": {
+    "title": "Product Description Text",
+    "props": {
+      "text": "Detailed product description up to three lines",
+      "font": "t-heading-5",
+      "blockClass": [
+        "product-description-text"
+      ]
+    }
+  },
+  "flex-layout.row#original-price": {
+    "title": "Original Price",
+    "props": {
+      "blockClass": [
+        "original-price"
+      ]
     },
-    "rich-text#3": {
-      "props": {
-        "text": "Test3"
-      }
+    "children": [
+      "rich-text#original-price-text"
+    ]
+  },
+  "rich-text#original-price-text": {
+    "title": "Original Price Text",
+    "props": {
+      "text": "$ 836.900",
+      "font": "t-heading-5",
+      "blockClass": [
+        "original-price-text"
+      ]
+    }
+  },
+  "flex-layout.row#discounted-price": {
+    "title": "Discounted Price",
+    "props": {
+      "blockClass": [
+        "discounted-price"
+      ]
+    },
+    "children": [
+      "rich-text#discounted-price-text"
+    ]
+  },
+  "rich-text#discounted-price-text": {
+    "title": "Discounted Price Text",
+    "props": {
+      "text": " $ 636.900",
+      "font": "t-heading-1",
+      "blockClass": [
+        "discounted-price-text"
+      ]
+    }
+  },
+  "flex-layout.row#freeShippingImage": {
+    "title": "Free Shipping",
+    "props": {
+      "horizontalAlign": "left",
+      "blockClass": [
+        "free-shipping"
+      ]
+    },
+    "children": [
+      "image#freeShipping"
+    ]
+  },
+  "image#freeShipping": {
+    "title": "Free Shipping Image",
+    "props": {
+      "src": "arquivos/free__shiping.svg",
+      "horizontalAlign": "left",
+      "verticalAlign": "center",
+      "blockClass": [
+        "free-shipping-image"
+      ]
+    }
+  },
+  "image#buyButton": {
+    "title": "Buy Button Image",
+    "props": {
+      "src": "arquivos/buy--button--car.svg",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "blockClass": [
+        "buy-button-image"
+      ]
     }
   }
+}
