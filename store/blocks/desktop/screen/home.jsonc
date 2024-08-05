@@ -3,6 +3,7 @@
         "title": "Home section desktop",
         "children": [
             "flex-layout.row#desktop_home-section",
+            "flex-layout.row#row_container_slider",
             "flex-layout.row#global__second--slider"
         ]
 

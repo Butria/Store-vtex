@@ -39,7 +39,7 @@
       "flex-layout.row#desktop--image",
       "flex-layout.row#product-description",
       "flex-layout.row#original-price",
-      "flex-layout.row#discounted-price",
+      "flex-layout.row#price__discounted",
       "flex-layout.row#freeShippingImage",
       "image#buyButton"
     ],
@@ -52,11 +52,22 @@
   "flex-layout.row#badge--like": {
     "title": "Badge and Like",
     "children": [
+      "rich-text#badge__percent--off",
       "image#badge_like"
+      
     ],
     "props": {
       "blockClass": [
         "badge--like"
+      ]
+    }
+  },
+  "rich-text#badge__percent--off": {
+    "title": "Badge percent off",
+    "props": {
+      "text": "20% OFF",
+      "blockClass": [
+        "badge__percent--off"
       ]
     }
   },
@@ -69,6 +80,7 @@
       ]
     }
   },
+  
   "flex-layout.row#desktop--image": {
     "title": "Product Image Desktop",
     "children": [
@@ -78,6 +90,8 @@
   "image#desktop--product": {
     "title": "Product Image",
     "props": {
+      "showBadge": true,
+      "height": 220,
       "src": "arquivos/desktop-computer-image-product-summary-slider.png",
       "blockClass": [
         "product_image"
@@ -98,7 +112,7 @@
   "rich-text#product-description-text": {
     "title": "Product Description Text",
     "props": {
-      "text": "Detailed product description up to three lines",
+      "text": "Descripción del producto en hasta tres líneas de texto explicativo",
       "font": "t-heading-5",
       "blockClass": [
         "product-description-text"
@@ -126,11 +140,11 @@
       ]
     }
   },
-  "flex-layout.row#discounted-price": {
-    "title": "Discounted Price",
+  "flex-layout.row#price__discounted": {
+    "title": "Price Discounted ",
     "props": {
       "blockClass": [
-        "discounted-price"
+        "price__discounted"
       ]
     },
     "children": [
@@ -162,7 +176,7 @@
   "image#freeShipping": {
     "title": "Free Shipping Image",
     "props": {
-      "src": "arquivos/free__shiping.svg",
+      "src": "arquivos/Envio-gratis.png",
       "horizontalAlign": "left",
       "verticalAlign": "center",
       "blockClass": [
@@ -173,7 +187,7 @@
   "image#buyButton": {
     "title": "Buy Button Image",
     "props": {
-      "src": "arquivos/buy--button--car.svg",
+      "src": "arquivos/Comprar-Button.png",
       "horizontalAlign": "center",
       "verticalAlign": "center",
       "blockClass": [

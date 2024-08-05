@@ -1,45 +1,21 @@
 {
-    "flex-layout.row#text__one--home": {
-        "title": "Text row one home",
-        "children": [
-            "flex-layout.col#text__one--home",
-            "flex-layout.col#text__two--home"
-        ],
-        "props": {
-            "blockClass": "c"
-        }
-
-    },
-    "flex-layout.col#text__one--home": {
-        "title": "Text col one home",
-        "children": [
-            "rich-text"
-        ],
-        "props": {
-            "blockClass": [
-                "col__one--text"
-            ]
-        }
-
-    },
-    "flex-layout.col#text__two--home": {
-        "title": "Text col two home",
-        "children": [
-            "rich-text"
-        ],
-        "props": {
-            "blockClass": [
-                "col__one--two"
-            ]
-        }
-
-    },
-    "rich-text": { 
-        "props": { 
-          "text": "Hola ",
-          "textAlignment": "CENTER",
-          "textPosition": "CENTER",
-          "font": "t-heading-1"
-        }
-      }
+    "flex-layout.row#row_container_slider": {
+    "title": "Row container for slider",
+    "children": [
+        "rich-text#slider_title"
+    ],
+    "props": {
+      "blockClass": "container_slider"
+    }
+  },
+    "rich-text#slider_title": {
+    "title": "Slider Title",
+    "props": {
+        "text": "An amazing product.",
+        "font": "t-body",
+        "textAlignment": "LEFT",
+        "textPosition": "LEFT",
+        "blockClass": "slider_title"
+    }
+  }
 }

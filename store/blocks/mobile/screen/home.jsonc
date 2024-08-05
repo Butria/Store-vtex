@@ -4,6 +4,7 @@
         "children": [
             "flex-layout.row#mobile__home-section",
             "flex-layout.row#global__second--slider"
+            
 
         ]
 
