@@ -6,6 +6,7 @@
     "children": [
       "drawer",
       "logo",
+      "search-bar",
       "flex-layout.col#spacer",
       "login",
       "minicart.v2"
@@ -14,7 +15,8 @@
       "blockClass": "main-header-mobile",
       "preventHorizontalStretch": true,
       "preserveLayoutOnMobile": true,
-      "fullWidth": true
+      "fullWidth": true,
+      "verticalAlign" : "middle"
     }
   },
   "drawer": {
