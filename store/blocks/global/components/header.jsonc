@@ -8,8 +8,9 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "arquivos/itg--logo.svg",
-      "width": "80"
+      "url": "arquivos/icono-itg.svg",
+      "width": "40"
+
     }
   }
 }
