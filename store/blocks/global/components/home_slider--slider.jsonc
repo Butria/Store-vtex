@@ -8,11 +8,16 @@
 
     "slider-layout#second__slider": {
         "props": {
+            "fullWidth": false,
             "itemsPerPage": {
                 "desktop": 4,
                 "tablet": 3,
                 "phone": 1.5
-            }
+            },
+            "infinite": true,
+            "showNavigationArrows": "always",
+            "showPaginationDots": "always",
+            "blockClass": "custom__slider--2"
         },
         "children": [
             "flex-layout.col#second__slider--container",

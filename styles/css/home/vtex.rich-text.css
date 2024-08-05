@@ -1,7 +1,34 @@
-.link--slider_third-row--button::after {
-    content: url("/arquivos/arrow-button.svg");
+.wrapper--badge__percent--off {
+    font-family: Lexend, sans-serif;
+    background-color: #1D2734;
+    border-radius: 4px !important;
+    border: solid 1px !important;
+    width: 84px;
+    height: 32px;
+    padding: 6px 12px 6px 12px;
+    gap: 10px;
 }
 
-.link--slider_third-row--button{
-    background-color: blue;
+.paragraph--badge__percent--off {
+    margin: 0PX;
+    width: 60px;
+    height: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+}
+
+
+.paragraph--product-description-text {
+    width: 212px;
+    height: 51px !important;
+    font-family: Lexend, sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 18px !important;
+    line-height: 16.8px;
+    color: #1D2734;
+    text-align: left;
+    text-overflow: ellipsis;
+    margin: 0px;
 }

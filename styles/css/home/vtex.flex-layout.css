@@ -1,7 +1,122 @@
-.flexCol--col__one--text {
-    background-color: brown;
+.product_slider--desktop {
+    margin: 0 auto;
+    width: 100%;
 }
 
-.flexCol--col__two--text {
-    background-color: yellow;
+.productSlider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.product-card--desktop {
+    padding: 10px;
+    margin: 5px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.badge--like {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.image-badge-like {
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+}
+
+.product_image {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-description {
+    margin-top: px;
+    font-size: 14px;
+}
+
+.product-description-text {
+    font-family: Lexend, sans-serif;
+    color: #333;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+.original-price-text {
+    font-size: 12px; /* Ajuste del tamaño de la fuente */
+}
+
+.price__discounted {
+    color: #e74c3c;
+    font-size: 18px; /* Ajuste del tamaño de la fuente */
+}
+
+.discounted-price-text {
+    font-weight: bold;
+}
+
+.free-shipping {
+    display: flex;
+    justify-content: flex-end; /* Alineación a la derecha */
+    align-items: center;
+}
+
+.free-shipping-text {
+    font-size: 12px; /* Ajuste del tamaño de la fuente */
+}
+
+.free-shipping-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.buy-button-image {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+}
+
+/* Estilos específicos para móviles */
+@media only screen and (max-width: 767px) {
+    .productSlider {
+        flex-direction: column;
+    }
+
+    .product-card--desktop {
+        padding: 5px;
+        margin: 2px;
+    }
+
+    .badge__percent--off {
+        width: 70px;
+        height: 28px;
+        font-size: 12px;
+    }
+
+    .image-badge-like {
+        width: 20px;
+        height: 20px;
+        margin-left: 4px;
+    }
+
+    .product-description {
+        font-size: 12px;
+    }
+
+    .price__discounted {
+        font-size: 16px;
+    }
+
+    .buy-button-image {
+        width: 120px;
+    }
 }

@@ -4,23 +4,14 @@
       "responsive-layout.desktop#home__section",
       "responsive-layout.tablet#home__section",
       "responsive-layout.phone#home__section",
-      "responsive-layout.mobile#home__section",
+      /*"responsive-layout.mobile#home__section",*/
       "flex-layout.row#slider2--home-modified"
-      /*"flex-layout.row#main-images-container",
+      
+      /*
       "rich-text#text-title",
       "slider-layout#text-test"
       */
     ]
-  },
-
-
-  "rich-text#text-title": {
-    "props": {
-      "text": "An amazing product.",
-      "font": "t-heading-5",
-      "textAlignment": "LEFT",
-      "textPosition": "LEFT"
-
-    }
   }
+
 }
