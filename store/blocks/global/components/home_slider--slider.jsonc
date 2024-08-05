@@ -1,5 +1,6 @@
 {
     "flex-layout.row#global__second--slider": {
+        "title": "Global second slider",
         "children": [
             "slider-layout#second__slider"
         ]
@@ -8,7 +9,7 @@
     "slider-layout#second__slider": {
         "props": {
             "itemsPerPage": {
-                "desktop": 5,
+                "desktop": 4,
                 "tablet": 3,
                 "phone": 1.5
             }
@@ -62,7 +63,7 @@
 
     "rich-text#second__row-title": {
         "props": {
-            "text": "# Heading\n Builder platform is made by, buildership platform is made by..."
+            "text": "Heading Builder platform is made by, buildership platform is made by..."
 
         }
     },
@@ -75,8 +76,11 @@
     },
 
     "image#second__row-best-seller": {
+      "title": "bestseller Image",
       "props": {
-        "src": "/arquivos/bestseller-image.png"
+        "src": "/arquivos/bestseller-image.png",
+        "alt": "bestseller Image"
+
         
       }
     },
@@ -88,6 +92,7 @@
     },
 
     "rich-text#slider__third-row--button": {
+        "title": "Price Button",
         "props": {
             "text": "[Ver precio](https:)",
             "blockClass": "slider_third-row--button"
