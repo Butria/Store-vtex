@@ -1,0 +1,114 @@
+{
+"sticky-layout#desktop": {
+    "title": "sticky desktop",
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": ["flex-layout.row#desktop"]
+  },
+
+  "flex-layout.row#desktop": {
+    "title": "Container Header Desktop",
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass":"sticky-header"
+    },
+    "children": [
+      "drawer",
+      "flex-layout.col#logo-desktop",
+      "search-bar#desktop",
+      "vtex.menu@2.x:menu#header__one",
+      "flex-layout.col#spacer", 
+      
+      "minicart.v2",
+      "login"
+    ]
+  },
+  "flex-layout.col#logo-desktop": {
+    "title": "Logo desktop",
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo"]
+  },
+  "search-bar#desktop": {
+    "props": {
+        "verticalAlign" : "middle",
+        "horizontalAlign" : "LEFT"
+    }
+  },
+  "vtex.menu@2.x:menu#header__one": {
+    "title": "Header one line desktop",
+  "props":{
+      "blockClass": [
+      "header__one"
+      ],
+      "items": [
+        {
+          "id": "category-tendencias",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/tendencias",
+            "noFollow": false,
+            "tagTitle": "Tendencias",
+            "text": "Tendencias de ITGlobers"
+        }
+      },
+      {
+        "id": "category-Colecciones",
+        "type": "custom",
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/colecciones",
+          "noFollow": false,
+          "tagTitle": "Colecciones",
+          "text": "Colecciones del mes"
+        }
+      },
+      {
+        "id": "category-ofertas",
+        "type": "custom",
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/ofertas-enero",
+          "noFollow": false,
+          "tagTitle": "Ofertas",
+          "text": "Ofertas de Enero"
+        }
+      },
+      {
+        "id": "category-cyber-monday",
+        "type": "custom",
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/cyber-monday",
+          "noFollow": false,
+          "tagTitle": "Cyber Monday",
+          "text": "Cyber Monday"
+        }
+      },
+      {
+        "id": "category-never-say-never",
+        "type": "custom",
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/never-say-never",
+          "noFollow": false,
+          "tagTitle": "Never Say Never",
+          "text": "Never Say Never"
+        }
+      }
+      ]
+    }
+  } 
+}
