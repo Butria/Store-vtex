@@ -1,0 +1,31 @@
+{
+    "vtex.menu@2.x:menu#with__icons": {
+  "title": "Menu desktop",  
+  "children": [
+    "menu-item#shop"
+  ]
+},
+"menu-item#shop": {
+  "title": "Menu item shop desktop",  
+  "props": {
+    "id": "menu-item-shop",
+    "type": "custom",
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "#",
+      "noFollow": false,
+      "tagTitle": "Shop",
+      "text": "Shop"
+    },
+    "iconProps": {
+      "id": "bnd-logo",
+      "size": 16,
+      "viewBox": "0 0 16 16",
+      "activeClassName": "rebel-pink",
+      "mutedClassName": "c-action-primary"
+    },
+    "iconToTheRight": true
+  }
+}
+}
