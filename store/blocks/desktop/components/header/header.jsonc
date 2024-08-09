@@ -1,10 +1,13 @@
 {
-"sticky-layout#desktop": {
+  "sticky-layout#desktop": {
     "title": "sticky desktop",
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": ["flex-layout.row#desktop"]
+    "children": [
+      "flex-layout.row#desktop",
+      "flex-layout.row#header__menu--categories"
+    ]
   },
 
   "flex-layout.row#desktop": {
@@ -15,15 +18,15 @@
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
       "fullWidth": true,
-      "blockClass":"sticky-header"
+      "blockClass": "sticky-header"
     },
     "children": [
       "drawer",
       "flex-layout.col#logo-desktop",
       "search-bar#desktop",
       "vtex.menu@2.x:menu#header__one",
-      "flex-layout.col#spacer", 
-      
+      "flex-layout.col#spacer",
+
       "minicart.v2",
       "login"
     ]
@@ -37,16 +40,14 @@
   },
   "search-bar#desktop": {
     "props": {
-        "verticalAlign" : "middle",
-        "horizontalAlign" : "LEFT"
+      "verticalAlign": "middle",
+      "horizontalAlign": "LEFT"
     }
   },
   "vtex.menu@2.x:menu#header__one": {
     "title": "Header one line desktop",
-  "props":{
-      "blockClass": [
-      "header__one"
-      ],
+    "props": {
+      "blockClass": ["header__one"],
       "items": [
         {
           "id": "category-tendencias",
@@ -58,57 +59,282 @@
             "noFollow": false,
             "tagTitle": "Tendencias",
             "text": "Tendencias de ITGlobers"
+          }
+        },
+        {
+          "id": "category-Colecciones",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/colecciones",
+            "noFollow": false,
+            "tagTitle": "Colecciones",
+            "text": "Colección del mes"
+          }
+        },
+        {
+          "id": "category-ofertas",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/ofertas-enero",
+            "noFollow": false,
+            "tagTitle": "Ofertas",
+            "text": "Ofertas Enero"
+          }
+        },
+        {
+          "id": "category-cyber-monday",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/cyber-monday",
+            "noFollow": false,
+            "tagTitle": "Cyber Monday",
+            "text": "Cyber Monday"
+          }
+        },
+        {
+          "id": "category-never-say-never",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/never-say-never",
+            "noFollow": false,
+            "tagTitle": "Never Say Never",
+            "text": "Never Say Never"
+          }
         }
-      },
-      {
-        "id": "category-Colecciones",
-        "type": "custom",
-        "highlight": false,
-        "itemProps": {
-          "type": "internal",
-          "href": "/colecciones",
-          "noFollow": false,
-          "tagTitle": "Colecciones",
-          "text": "Colecciones del mes"
-        }
-      },
-      {
-        "id": "category-ofertas",
-        "type": "custom",
-        "highlight": false,
-        "itemProps": {
-          "type": "internal",
-          "href": "/ofertas-enero",
-          "noFollow": false,
-          "tagTitle": "Ofertas",
-          "text": "Ofertas de Enero"
-        }
-      },
-      {
-        "id": "category-cyber-monday",
-        "type": "custom",
-        "highlight": false,
-        "itemProps": {
-          "type": "internal",
-          "href": "/cyber-monday",
-          "noFollow": false,
-          "tagTitle": "Cyber Monday",
-          "text": "Cyber Monday"
-        }
-      },
-      {
-        "id": "category-never-say-never",
-        "type": "custom",
-        "highlight": false,
-        "itemProps": {
-          "type": "internal",
-          "href": "/never-say-never",
-          "noFollow": false,
-          "tagTitle": "Never Say Never",
-          "text": "Never Say Never"
-        }
-      }
       ]
     }
-  } 
+  },
+  "flex-layout.row#header__menu--categories": {
+    "title": "Header categories icons",
+    "children": [
+      "flex-layout.col#col-food",
+      "flex-layout.col#col-fitness",
+      "flex-layout.col#col-artic",
+      "flex-layout.col#col-poolday",
+      "flex-layout.col#col-hotel",
+      "flex-layout.col#col-house",
+      "flex-layout.col#col-nature",
+      "flex-layout.col#col-closet",
+      "flex-layout.col#col-beach",
+      "flex-layout.col#col-mountaineering",
+      "flex-layout.col#col-delivery",
+      "flex-layout.col#col-beer"
+    ],
+    "props": {
+      "blockClass": "header__categories-icons"
+    }
+  },
+  "flex-layout.col#col-food": {
+    "children": ["image#food", "rich-text#food"],
+    "props": {
+      "width": "8.33%"
+    }
+  },
+  "flex-layout.col#col-fitness": {
+    "children": ["image#fitness", "rich-text#fitness"],
+    "props": {
+      "width": "8.33%"
+    }
+  },
+  "flex-layout.col#col-artic": {
+    "children": ["image#artic", "rich-text#artic"],
+    "props": {
+      "width": "8.33%"
+    }
+  },
+  "flex-layout.col#col-poolday": {
+    "children": ["image#poolday", "rich-text#poolday"],
+    "props": {
+      "width": "8.33%"
+    }
+  },
+  "flex-layout.col#col-hotel": {
+    "children": ["image#hotel", "rich-text#hotel"],
+    "props": {
+      "width": "8.33%"
+    }
+  },
+  "flex-layout.col#col-house": {
+    "children": ["image#house", "rich-text#house"],
+    "props": {
+      "width": "8.33%"
+    }
+  },
+  "flex-layout.col#col-nature": {
+    "children": ["image#nature", "rich-text#nature"],
+    "props": {
+      "width": "8.33%"
+    }
+  },
+  "flex-layout.col#col-closet": {
+    "children": ["image#closet", "rich-text#closet"],
+    "props": {
+      "width": "8.33%"
+    }
+  },
+  "flex-layout.col#col-beach": {
+    "children": ["image#beach", "rich-text#beach"],
+    "props": {
+      "width": "8.33%"
+    }
+  },
+  "flex-layout.col#col-mountaineering": {
+    "children": ["image#mountaineering", "rich-text#mountaineering"],
+    "props": {
+      "width": "8.33%"
+    }
+  },
+  "flex-layout.col#col-delivery": {
+    "children": ["image#delivery", "rich-text#delivery"],
+    "props": {
+      "width": "8.33%"
+    }
+  },
+  "flex-layout.col#col-beer": {
+    "children": ["image#beer", "rich-text#beer"],
+    "props": {
+      "width": "8.33%"
+    }
+  },
+  "image#food": {
+    "props": {
+      "src": "/arquivos/food.png",
+      "alt": "Food"
+    }
+  },
+  "rich-text#food": {
+    "props": {
+      "text": "Food"
+    }
+  },
+  "image#fitness": {
+    "props": {
+      "src": "/arquivos/fitness.png",
+      "alt": "Fitness"
+    }
+  },
+  "rich-text#fitness": {
+    "props": {
+      "text": "Fitness"
+    }
+  },
+  "image#artic": {
+    "props": {
+      "src": "/arquivos/artico.png",
+      "alt": "En el Ártico"
+    }
+  },
+  "rich-text#artic": {
+    "props": {
+      "text": "En el Ártico"
+    }
+  },
+  "image#poolday": {
+    "props": {
+      "src": "/arquivos/poolday.png",
+      "alt": "Poolday"
+    }
+  },
+  "rich-text#poolday": {
+    "props": {
+      "text": "Poolday"
+    }
+  },
+  "image#hotel": {
+    "props": {
+      "src": "/arquivos/hotel.png",
+      "alt": "Hoteles"
+    }
+  },
+  "rich-text#hotel": {
+    "props": {
+      "text": "Hoteles"
+    }
+  },
+  "image#house": {
+    "props": {
+      "src": "/arquivos/house.png",
+      "alt": "Casas"
+    }
+  },
+  "rich-text#house": {
+    "props": {
+      "text": "Casas"
+    }
+  },
+
+  "image#nature": {
+    "props": {
+      "src": "/arquivos/naturaleza.png",
+      "alt": "Naturales"
+    }
+  },
+  "rich-text#nature": {
+    "props": {
+      "text": "Naturales"
+    }
+  },
+  "image#closet": {
+    "props": {
+      "src": "/arquivos/closet.png",
+      "alt": "Closet"
+    }
+  },
+  "rich-text#closet": {
+    "props": {
+      "text": "Closet"
+    }
+  },
+  "image#beach": {
+    "props": {
+      "src": "/arquivos/playa.png",
+      "alt": "Playas"
+    }
+  },
+  "rich-text#beach": {
+    "props": {
+      "text": "Playas"
+    }
+  },
+  "image#mountaineering": {
+    "props": {
+      "src": "/arquivos/alpinismo.png",
+      "alt": "Alpinismo"
+    }
+  },
+  "rich-text#mountaineering": {
+    "props": {
+      "text": "Alpinismo"
+    }
+  },
+  "image#delivery": {
+    "props": {
+      "src": "/arquivos/delivery.png",
+      "alt": "Delivery"
+    }
+  },
+  "rich-text#delivery": {
+    "props": {
+      "text": "Delivery"
+    }
+  },
+  "image#beer": {
+    "props": {
+      "src": "/arquivos/cerveza.png",
+      "alt": "Cervezas"
+    }
+  },
+  "rich-text#beer": {
+    "props": {
+      "text": "Cervezas"
+    }
+  }
 }

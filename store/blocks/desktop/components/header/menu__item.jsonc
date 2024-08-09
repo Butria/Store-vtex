@@ -1,5 +1,5 @@
 {
-    "vtex.menu@2.x:menu#with__icons": {
+    "vtex.menu@2.x:menu#header__2": {
   "title": "Menu desktop",  
   "children": [
     "menu-item#shop"
