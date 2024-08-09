@@ -6,20 +6,40 @@
     "children": [
       "drawer",
       "logo",
-      "search-bar",
       "flex-layout.col#spacer",
-      "login",
-      "minicart.v2"
+      "search-bar",
+      "minicart.v2",
+      "login"
     ],
     "props": {
       "blockClass": "main-header-mobile",
       "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
       "preserveLayoutOnMobile": true,
       "fullWidth": true,
-      "verticalAlign" : "middle"
+      "verticalAlign" : "center",
+      "horizontalAlign": "center",
+      "topMenuIcons": true
+      
     }
   },
   "drawer": {
+    "props": {
+      "verticalAlign": "middle"
+  
+    },
     "children": []
-  }
+  },
+  "login#header__mobile": {
+    "props": {
+      "emailAndPasswordTitle": "LOG-IN",
+      "accessCodeTitle": "Acess Code LOG-IN",
+      "emailPlaceholder": "e-mail",
+      "passwordPlaceholder": "password",
+      "showPasswordVerificationIntoTooltip": true,
+      "iconLabel": "Login",
+      "blockClass": "icon-login"
+      }
+    }
+  
 }
