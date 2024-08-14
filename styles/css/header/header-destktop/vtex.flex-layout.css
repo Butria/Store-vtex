@@ -1,0 +1,42 @@
+.flexRowContent--sticky-header {
+    background-color: #FFFFFF;
+    padding: 10px;
+}
+.flexRowContent--header__categories-icons {
+    background-color: #FFFFFF;
+    display          : flex;
+    justify-content  : center;
+    align-items      : center;
+    width            : 1136px;
+    height           : auto;
+    min-height       : 47px;
+    left             : 72px;
+    position         : relative;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .flexRowContent--header__menu--categories {
+        display        : flex;
+        justify-content: left;
+        align-items    : center;
+        width          : 1136px;
+        height         : auto;
+        min-height     : 47px;
+        left           : 0px;
+        position       : relative;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .flexRowContent--header__menu--categories {
+        display        : flex;
+        justify-content: left;
+        align-items    : center;
+        width          : 1136px;
+        height         : auto;
+        min-height     : 47px;
+        left           : 0px;
+        position       : relative;
+    }
+}
