@@ -1,0 +1,9 @@
+.headerRowContainer--sticky__header-desktop {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    height         : 56px;
+    padding        : 8px 48px 8px 48px;
+    
+}
+

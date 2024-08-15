@@ -1,12 +1,14 @@
 {
     "header": {
     "blocks": ["header-layout.desktop", 
-    "header-layout.mobile"]
+    "header-layout.mobile",
+  "header-row#global__header--menu-categories"]
   },
 
  "header.full": {
     "blocks": ["header-layout.desktop", 
-    "header-layout.mobile"]
+    "header-layout.mobile",
+  "header-row#global__header--menu-categories"]
   }
   
 }
