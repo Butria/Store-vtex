@@ -1,4 +1,16 @@
-.headerRowContainer--sticky__header-desktop {
+.headerStickyRow--header__menu--categories{
+    overflow: hidden;
+}
+.headerRowContainer--header__menu--categories {
+    width          : 100%;
+    display        : flex;
+    align-items    : center;
+    justify-content: left;
+    height         : 56px;
+    padding        : 8px 48px 8px 48px;
+}
+
+.headerRowContainer--header__options--desktop {
     display        : flex;
     align-items    : center;
     justify-content: center;

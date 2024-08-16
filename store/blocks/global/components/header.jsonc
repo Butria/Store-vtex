@@ -11,7 +11,7 @@
       "preventVerticalStretch": true,
       "fullWidth": true,
       "blockClass": [
-        "global__header--menu-icons"
+        "global__header--menu-categories"
       ]
     }
 },
@@ -32,41 +32,51 @@
       "flex-layout.col#col-beer"
     ],
     "props": {
-      "blockClass": "header__categories-icons",
+      "preserveLayoutOnMobile": true,
+      "blockClass": "header__categories--icons",
       "fullWidth":true
     }
   },
   "flex-layout.col#col-food": {
     "title": "Category Food",
     "props": {
+      "verticalAlign":"middle",
       "width": "8.33%"
     },
-    "children": ["image#food", "rich-text#food"]
+    "children": ["image#food", 
+    "rich-text#food"]
   },
 
   "flex-layout.col#col-fitness": {
      "props": {
+      "verticalAlign":"middle",
       "width": "8.33%"
     },
-    "children": ["image#fitness", "rich-text#fitness"]
+    "children": ["image#fitness", 
+    "rich-text#fitness"]
   },
 
   "flex-layout.col#col-artic": {
     "props": {
+      "verticalAlign":"middle",
       "width": "8.33%"
     },
-    "children": ["image#artic", "rich-text#artic"]
+    "children": ["image#artic", 
+    "rich-text#artic"]
   },
 
   "flex-layout.col#col-poolday": {
     "props": {
+      "verticalAlign":"middle",
       "width": "8.33%"
     },
-    "children": ["image#poolday", "rich-text#poolday"]
+    "children": ["image#poolday", 
+    "rich-text#poolday"]
   },
 
   "flex-layout.col#col-hotel": {
     "props": {
+      "verticalAlign":"middle",
       "width": "8.33%"
     },
     "children": ["image#hotel", "rich-text#hotel"]
@@ -74,52 +84,66 @@
 
   "flex-layout.col#col-house": {
     "props": {
+      "verticalAlign":"middle",
       "width": "8.33%"
     },
-    "children": ["image#house", "rich-text#house"]
+    "children": ["image#house",
+    "rich-text#house"]
   },
 
   "flex-layout.col#col-nature": {
     
     "props": {
+      "verticalAlign":"middle",
       "width": "8.33%"
     },
-    "children": ["image#nature", "rich-text#nature"]
+    "children": ["image#nature", 
+    "rich-text#nature"]
   },
   
   "flex-layout.col#col-closet": {
     "props": {
+      "verticalAlign":"middle",
       "width": "8.33%"
     },
-    "children": ["image#closet", "rich-text#closet"]
+    "children": ["image#closet", 
+    "rich-text#closet"]
   },
 
   "flex-layout.col#col-beach": {
     "props": {
+      "verticalAlign":"middle",
       "width": "8.33%"
     },
-    "children": ["image#beach", "rich-text#beach"]
+    "children": ["image#beach", 
+    "rich-text#beach"]
   },
 
   "flex-layout.col#col-mountaineering": {
     "props": {
+      "verticalAlign":"middle",
       "width": "8.33%"
     },
-    "children": ["image#mountaineering", "rich-text#mountaineering"]
+    "children": ["image#mountaineering",
+    "rich-text#mountaineering"]
   },
 
   "flex-layout.col#col-delivery": {
     "props": {
+      "verticalAlign":"middle",
       "width": "8.33%"
     },
-    "children": ["image#delivery", "rich-text#delivery"]
+    "children": ["image#delivery",
+    "rich-text#delivery"]
   },
 
   "flex-layout.col#col-beer": {
     "props": {
+      "verticalAlign":"middle",
       "width": "8.33%"
     },
-    "children": ["image#beer", "rich-text#beer"]
+    "children": ["image#beer", 
+    "rich-text#beer"]
   },
 
   "image#food": {
@@ -132,7 +156,15 @@
   "rich-text#food": {
     "title": "Rich Text Food",
     "props": {
-      "text": "Food"
+      "text": "Food",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "font": "t-heading-10",
+      "blockClass": [
+        "text_menu_header--food",
+        "text_menu_header--global"
+      ]
+      
     }
   },
   "image#fitness": {
@@ -145,7 +177,14 @@
   "rich-text#fitness": {
     "title": "Rich Text Fitness",
     "props": {
-      "text": "Fitness"
+      "text": "Fitness",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "font": "t-heading-10",
+      "blockClass": [
+        "text_menu_header--fitness",
+        "text_menu_header--global"
+      ]
     }
   },
   "image#artic": {
@@ -158,7 +197,14 @@
   "rich-text#artic": {
     "title": "Rich Text Artic",
     "props": {
-      "text": "En el Ártico"
+      "text": "En el Ártico",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "font": "t-heading-10",
+      "blockClass": [
+        "text_menu_header--artic",
+        "text_menu_header--global"
+      ]
     }
   },
   "image#poolday": {
@@ -171,7 +217,14 @@
   "rich-text#poolday": {
     "title": "Rich Text Poolday",
     "props": {
-      "text": "Poolday"
+      "text": "Poolday",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "font": "t-heading-10",
+      "blockClass": [
+        "text_menu_header--pool",
+        "text_menu_header--global"
+      ]
     }
   },
   "image#hotel": {
@@ -184,7 +237,14 @@
   "rich-text#hotel": {
     "title": "Rich Text Hotel",
     "props": {
-      "text": "Hoteles"
+      "text": "Hoteles",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "font": "t-heading-10",
+      "blockClass": [
+        "text_menu_header--hotel",
+        "text_menu_header--global"
+      ]
     }
   },
   "image#house": {
@@ -197,7 +257,14 @@
   "rich-text#house": {
     "title": "Rich Text House",
     "props": {
-      "text": "Casas"
+      "text": "Casas",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "font": "t-heading-10",
+      "blockClass": [
+        "text_menu_header--house",
+        "text_menu_header--global"
+      ]
     }
   },
 
@@ -211,7 +278,14 @@
   "rich-text#nature": {
     "title": "Rich Text Nature",
     "props": {
-      "text": "Naturales"
+      "text": "Naturales",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "font": "t-heading-10",
+      "blockClass": [
+        "text_menu_header--nature",
+        "text_menu_header--global"
+      ]
     }
   },
   "image#closet": {
@@ -224,7 +298,14 @@
   "rich-text#closet": {
     "title": "Rich Text Closet",
     "props": {
-      "text": "Closet"
+      "text": "Closet",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "font": "t-heading-10",
+      "blockClass": [
+        "text_menu_header--closet",
+        "text_menu_header--global"
+      ]
     }
   },
   "image#beach": {
@@ -237,7 +318,14 @@
   "rich-text#beach": {
     "title": "Rich Text Beach",
     "props": {
-      "text": "Playas"
+      "text": "Playas",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "font": "t-heading-10",
+      "blockClass": [
+        "text_menu_header--beach",
+        "text_menu_header--global"
+      ]
     }
   },
   "image#mountaineering": {
@@ -250,7 +338,14 @@
   "rich-text#mountaineering": {
     "title": "Rich Text Mountaineering",
     "props": {
-      "text": "Alpinismo"
+      "text": "Alpinismo",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "font": "t-heading-10",
+      "blockClass": [
+        "text_menu_header--hike",
+        "text_menu_header--global"
+      ]
     }
   },
   "image#delivery": {
@@ -263,7 +358,14 @@
   "rich-text#delivery": {
     "title": "Rich Text Delivery",
     "props": {
-      "text": "Delivery"
+      "text": "Delivery",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "font": "t-heading-10",
+      "blockClass": [
+        "text_menu_header--delivery",
+        "text_menu_header--global"
+      ]
     }
   },
   "image#beer": {
@@ -276,21 +378,15 @@
   "rich-text#beer": {
     "title": "Rich Text Beer",
     "props": {
-      "text": "Cervezas"
+      "text": "Cervezas",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "font": "t-heading-10",
+      "blockClass": [
+        "text_menu_header--beer",
+        "text_menu_header--global"
+      ]
     }
   }
-   /* "flex-layout.col#spacer": {
-    "props": {
-      "width": "grow"
-    }
-  },
-  "logo": {
-    "props": {
-      "title": "Logo",
-      "href": "/",
-      "url": "arquivos/icono-itg.svg",
-      "width": "40"
-
-    }
-  }*/
+   
 }

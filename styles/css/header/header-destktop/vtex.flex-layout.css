@@ -2,14 +2,25 @@
 :global(.vtex-store-components-3-x-imageElementLink) {
     width: 100%;
 }
-.flexRowContent--sticky-header {
-    background-color: #FFFFFF;
-    padding: 10px;
-    width: 100%; 
-    box-sizing: border-box;
+.flexRowContent--header__left--section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.flexRowContent--header__menu--categories {
-    background-color: #FFFFFF;
+
+.flexColChild--drawer__header--desktop {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+}
+
+.flexColChild--logo__header--desktop {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+}
+
+.flexRowContent--header__categories--icons {
     display          : flex;
     justify-content  : left;
     align-items      : center;
@@ -18,12 +29,18 @@
     min-height       : 47px;
     left             : 72px;
     position         : relative;
-    text-align: center;
-    margin: 0 auto;
+}
+
+.flexCol--categorie__icon--global {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    width          : auto;
+    height         : 47px;
 }
 
 @media (max-width: 767px) {
-    .flexRowContent--header__menu--categories {
+    .flexRowContent--header__categories--icons {
         display        : flex;
         justify-content: left;
         align-items    : center;
@@ -36,7 +53,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    .flexRowContent--header__menu--categories {
+    .flexRowContent--header__categories--icons {
         display        : flex;
         justify-content: left;
         align-items    : center;

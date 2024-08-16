@@ -6,7 +6,7 @@
     "children": [
       "drawer",
       "logo",
-      "flex-layout.col#spacer",
+     /* "flex-layout.col#spacer",*/
       "search-bar",
       "minicart.v2",
       "login"

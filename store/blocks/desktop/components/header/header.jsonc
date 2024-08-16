@@ -1,49 +1,66 @@
 {
-  "sticky-layout#sticky__header-desktop": {
-    "title": "Sticky Header Desktop",
+  "header-row#header__options--desktop": {
+    "title": "Header Desktop",
     "props": {
-      "blockClass": "sticky__header-desktop",
+      "blockClass": "header__options--destokp",
       "fullWidth":true
     },
     "children": [
-      "flex-layout.row#desktop"
+      "flex-layout.row#header__right--section",
+      "vtex.menu@2.x:menu#header__one",
+      "flex-layout.row#header__left--section"
     ]
   },
 
-  "flex-layout.row#desktop": {
+  "flex-layout.row#header__right--section": {
     "title": "Container Header Desktop",
     "props": {
       "horizontalAlign": "center",
       "verticalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
-      "fullWidth": false,
-      "blockClass": "sticky-header-1"
+      "fullWidth": true,
+      "blockClass": "Header__right--section"
     },
     "children": [
-      "drawer",
+      "flex-layout.col#drawer__header--desktop",
       "flex-layout.col#logo-desktop",
-      "search-bar#desktop",
-      "vtex.menu@2.x:menu#header__one",
-      "flex-layout.col#spacer",
-      "minicart.v2",
-      "login"
+      "flex-layout.col#searchbar__header--desktop"
     ]
   },
-  "flex-layout.col#logo-desktop": {
-    "title": "Logo desktop",
+  "flex-layout.col#drawer__header--desktop": {
+    "title": "Container drawer desktop",
     "props": {
-      "verticalAlign": "middle"
+        "blockClass": "drawer__header--desktop"
+    },
+    "children": ["drawer"]
+  },
+
+  "flex-layout.col#logo-desktop": {
+    "title": "Container Logo desktop",
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "drawer__header--desktop"
     },
     "children": ["logo"]
   },
-  "search-bar#desktop": {
+
+  "flex-layout.col#searchbar__header--desktop": {
+    "title": "Container search bar",
+    "props":{
+        "blockClass": "searchbar__header--desktop"
+    },
+    "children":["search-bar#search-bar--desktop"]
+  },
+
+  "search-bar#search-bar--desktop": {
     "title": "Search Bar Desktop",
     "props": {
-      "verticalAlign": "middle",
-      "horizontalAlign": "left"
+      "placeholder": "Search products...",
+      "blockClass": "search__bar--desktop"
     }
   },
+  
   "vtex.menu@2.x:menu#header__one": {
     "title": "Header Menu desktop",
     "props": {
@@ -111,6 +128,57 @@
         }
       ]
     }
+  },
+
+ "flex-layout.row#header__left--section": {
+    "title": "Header left section",
+    "props": {
+        "horizontalAlign": "center",
+        "verticalAlign":"center",
+        "preventHorizontalStretch": true,
+        "preventVerticalStretch": true,
+        "fullWidth":true,
+        "blockClass": "header__left--section"
+    },
+    "children":["minicart.v2", "login#login__desktop"]
+
+ },
+
+  "minicart.v2": {
+    "props": {
+      "MinicartIcon": "icon-cart#minicart-icon"
+    }
+  },
+  "icon-cart#minicart-icon": {
+    "title": "icon minicart in desktop view",
+    "props": {
+      "width": 20,
+      "height": 20,
+      "size": 20,
+      "viewBox": "0 0 20 20"
+    }
+  },
+  "login#login__desktop": {
+    "props": {
+      "emailAndPasswordTitle": "LOG-IN",
+      "accessCodeTitle": "Acess Code LOG-IN",
+      "emailPlaceholder": "e-mail",
+      "passwordPlaceholder": "password",
+      "showPasswordVerificationIntoTooltip": true,
+      "iconLabel": "Login",
+      "blockClass": "login__desktop"
+    }
+  },
+
+  "logo": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "arquivos/icono-itg.svg",
+      "width": "40"
+
+    }
   }
+
   
 }
