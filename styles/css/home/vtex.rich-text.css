@@ -18,6 +18,16 @@
     line-height: 20px;
     color: #fff;
 }
+.price__discounted {
+    width: 122px;
+    height: 23px;
+    top: 74px;
+    font:Lexend;
+    font-size: 24px;
+    line-height: 28.8px;
+    color:#1D2734 ;
+
+}
 
 
 .paragraph--product-description-text {
@@ -32,3 +42,7 @@
     text-overflow: ellipsis;
     margin: 0px;
 }
+
+/*.container--discounted-price-text {
+
+}*/

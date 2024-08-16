@@ -1,7 +1,8 @@
 {
     "header-layout.desktop": {
     "children": [
-      "sticky-layout#desktop"
+      "header-row#header__options--desktop",
+      "header-row#global__header--menu-categories"
     ]
   }
 }
