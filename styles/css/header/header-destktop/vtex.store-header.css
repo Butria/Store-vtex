@@ -19,3 +19,24 @@
     
 }
 
+@media (max-width: 767px) {
+    .headerRowContainer--header__options--desktop {
+        width          : 100%;
+        display        : flex;
+        align-items    : center;
+        justify-content: left;
+        height         : 56px;
+        padding        : 0px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .headerRowContainer--header__options--desktop {
+        width          : 100%;
+        display        : flex;
+        align-items    : center;
+        justify-content: left;
+        height         : 56px;
+        padding        : 0px;
+    }
+}
