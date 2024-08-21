@@ -1,4 +1,4 @@
-.sliderLayoutContaineer--custom__slider--2 {
+.sliderLayoutContainer--custom__slider--2 {
     padding-left: 80px !important;
     padding-right: 80px !important;
 }
@@ -25,14 +25,57 @@
     margin-top: 10px;
     top: 330px !important;
     height: 50.89px;
+    width: 100%;
+}
+
+.paginationDot--custom__slider--2 {
+    width           : 44px !important;
+    height          : 40px !important;
+    border-radius   : 0;
+    background-color: transparent;
+    position        : relative;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    margin          : 0 2px;
+}
+
+.paginationDot::after {
+    width           : 44px;
+    height          : 2px;
+    content         : "";
+    font-size       : 0;
+    background-color: #1D2734;
+    position        : absolute;
+}
+
+.paginationDot--isActive::before {
+    content         : "";
+    position        : absolute;
+    right           : -8px;
+    width           : 16px;
+    height          : 16px;
+    background-color: #1D2734;
+    border-radius   : 50%;
+}
+
+.paginationDot--isActive .paginationDot::after {
+    width           : 44px;
+    height          : 2px;
+    content         : "";
+    font-size       : 0;
+    background-color: #1d273466;
+    position        : absolute;
 }
 
 .sliderLeftArrow {
-    left: 40px;
+    left: -60px;
+    top:50%;
 }
 
 .sliderRightArrow {
-    right: 40px;
+    right: -60px;
+    top: 50%;
 }
 .paginationDot--isActive {
     transform: scale(1.5);
